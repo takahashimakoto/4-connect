@@ -14,7 +14,7 @@ $stmt = $dbh->query('select * from staff');
 
 
 <table border='1'>
-<?php foreach ($stmt->fetchALL(PDO::FETCH_ASSOC) as $staff ): ?>
+<?php foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $staff ): ?>
 
 <tr>
 <td><?php echo $staff['staff_id']; ?></td>
