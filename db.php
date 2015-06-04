@@ -9,7 +9,7 @@
 <?php
  
 $dbh = new PDO('mysql:dbname=sakila;host=localhost','root','');
-$stmt = dbh->query('select * from staff');
+$stmt = $dbh->query('select * from staff');
 ?>
 
 
